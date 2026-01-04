@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Udayam Bihar | Grocery in 10 Minutes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🛒 Udayam Bihar</h1>
+  <p>10-Minute Grocery & Home Delivery</p>
+  <a class="wp-btn" href="https://wa.me/91XXXXXXXXXX" target="_blank">
+    Order on WhatsApp
+  </a>
+</header>
+
+<section class="banner">
+  ⚡ 10-Minute Delivery • 🏠 Home Delivery Available
+</section>
+
+<section class="area">
+  <h3>📍 Check Delivery Area</h3>
+  <input type="text" id="pincode" placeholder="Enter Pincode">
+  <button onclick="checkArea()">Check</button>
+  <p id="areaMsg"></p>
+</section>
+
+<h2 class="title">Vegetables</h2>
+<div class="products">
+  <div class="product">
+    <img src="https://i.imgur.com/5ZQ0QkG.png">
+    <h4>Potato</h4>
+    <p>₹30 / kg</p>
+    <button onclick="addItem('Potato',30)">Add</button>
+  </div>
+
+  <div class="product">
+    <img src="https://i.imgur.com/Uq7ZC9K.png">
+    <h4>Tomato</h4>
+    <p>₹40 / kg</p>
+    <button onclick="addItem('Tomato',40)">Add</button>
+  </div>
+</div>
+
+<h2 class="title">Dairy</h2>
+<div class="products">
+  <div class="product">
+    <img src="https://i.imgur.com/7yUvePI.png">
+    <h4>Milk</h4>
+    <p>₹50</p>
+    <button onclick="addItem('Milk',50)">Add</button>
+  </div>
+</div>
+
+<section class="summary">
+  <h3>🧾 Order Summary</h3>
+  <ul id="list"></ul>
+  <strong>Total: ₹<span id="total">0</span></strong><br><br>
+  <button onclick="payUPI()">Pay via UPI</button>
+  <button onclick="orderCOD()">Cash on Delivery</button>
+</section>
+
+<footer>
+  © 2026 Udayam Bihar | Local • Fast • Trusted
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
